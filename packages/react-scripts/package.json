@@ -4,14 +4,14 @@
   "description": "Configuration and scripts for Create React App.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kitze/create-react-app/"
+    "url": "https://github.com/chocolatejs/create-react-app/"
   },
   "license": "BSD-3-Clause",
   "engines": {
     "node": ">=4"
   },
   "bugs": {
-    "url": "https://github.com/kitze/create-react-app/issues"
+    "url": "https://github.com/chocolatejs/create-react-app/issues"
   },
   "files": [
     ".babelrc",
@@ -76,7 +76,8 @@
     "webpack": "1.14.0",
     "webpack-dev-server": "1.16.2",
     "webpack-manifest-plugin": "1.1.0",
-    "whatwg-fetch": "1.0.0"
+    "whatwg-fetch": "1.0.0",
+    "webpack-bundle-tracker": "^0.2.0",
   },
   "devDependencies": {
     "react": "^15.3.0",

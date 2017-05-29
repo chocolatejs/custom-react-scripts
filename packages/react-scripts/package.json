@@ -1,6 +1,6 @@
 {
-  "name": "custom-react-scripts",
-  "version": "0.0.23",
+  "name": "chocolatejs-custom-react-scripts",
+  "version": "0.0.24",
   "description": "Configuration and scripts for Create React App.",
   "repository": {
     "type": "git",

@@ -19,6 +19,7 @@ var url = require('url');
 var paths = require('./paths');
 var getClientEnvironment = require('./env');
 var getCustomConfig = require('./get-custom-config');
+var BundleTracker = require('webpack-bundle-tracker');
 
 // @remove-on-eject-begin
 // `path` is not used after eject - see https://github.com/facebookincubator/create-react-app/issues/1174
@@ -218,6 +219,7 @@ module.exports = {
     ];
   },
   plugins: [
+    new BundleTracker({filename: './webpack-stats.json'}),
     // Makes the public URL available as %PUBLIC_URL% in index.html, e.g.:
     // <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     // In production, it will be an empty string unless you specify "homepage"

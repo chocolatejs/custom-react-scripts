@@ -209,6 +209,7 @@ module.exports = {
     ];
   },
   plugins: [
+    new BundleTracker({filename: './webpack-stats.json'}),
     // Makes the public URL available as %PUBLIC_URL% in index.html, e.g.:
     // <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     // In development, this will be an empty string.
@@ -233,8 +234,7 @@ module.exports = {
     // to restart the development server for Webpack to discover it. This plugin
     // makes the discovery automatic so you don't have to restart.
     // See https://github.com/facebookincubator/create-react-app/issues/186
-    new WatchMissingNodeModulesPlugin(paths.appNodeModules),
-    new BundleTracker({filename: './webpack-stats.json'})
+    new WatchMissingNodeModulesPlugin(paths.appNodeModules)
   ].concat(customConfig.plugins),
   // Some libraries import Node modules but don't use them in the browser.
   // Tell Webpack to provide empty mocks for them so importing them works.
